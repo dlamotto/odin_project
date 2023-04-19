@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <!-- <title>Document</title> -->
+</head>
+<body>
+    <script src="password-check.js"></script>
+
+    <div style="width: 100%;">
+        <div id = "left-bg"> 
+            <div id="logo">
+                <img id = "picture_logo" src="odin-lined.png">
+                <h1>SIGN UP NOW!</h1>
+            </div>
+        </div>
+        <div id = "right_div"> 
+            <div id="text-box">
+                <br>
+                <p>This is not a real online service! You know you need something 
+                like this in your real life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.</p>
+            </div>
+            <div id="below-text-box">
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div id="form-box">
+                <p id="form-message">Lets Do It!</p>
+            <form onsubmit="validateForm(event)">
+                
+                <div class="inputWrapper">
+                <label for="fname">FIRST NAME:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Jane"><br>
+                </div>
+                <div class="inputWrapper">
+                <label for="lname">LAST NAME:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+                </div>
+                <div class="inputWrapper">
+                <label for="email">*EMAIL:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="inputWrapper">
+                <label for="phone">PHONE NUMBER:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+                </div>
+                <div class="inputWrapper">
+                <label for="password">*PASSWORD:</label><br>
+                <input type="password" id="password" name="password" minlength="8" required onkeyup='passConfirm()'><br>
+                </div>  
+                <div class="inputWrapper">
+                <label for="confirm">*CONFIRM PASSWORD:</label><br>
+                <input type="password" id="confirm_password" name="confirm" minlength="8" required onkeyup='passConfirm()'><br>
+                </div>
+                <span id="Message"></span>
+            </form>
+            </div>
+                <button type="submit">CREATE ACCOUNT</button>
+            </div>
+    </div>
+
+</body>
+</html>

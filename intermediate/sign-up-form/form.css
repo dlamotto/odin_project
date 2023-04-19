@@ -1,0 +1,131 @@
+/* LEFT */
+
+#left-bg {
+    background-image: url('sign_up_bg.jpg');
+    width: 30%;
+    height: 100vh;
+    float: left;
+}
+
+#logo {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    top: 80px;
+    height: auto;
+    font-size: 20px;
+    margin:0 auto;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#picture_logo{
+    position: relative;
+    height: 18vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*  */
+
+h1{
+    font-family: 'Abel';
+    color: white;
+}
+
+
+/* RIGHT */
+
+
+#right_div{
+    margin-left: 30%;
+    height: 100vh;
+    background: whitesmoke;
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+#text-box{
+    top: 80px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size:x-large;
+    width: 80%;
+    margin-left: 1.4em;
+    
+}
+
+#below-text-box{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size:x-large;
+    width: 80%;
+    padding: 8px;
+    margin-left: 1em;
+}
+
+#form-message{
+    font-family: sans-serif;
+    font-size: large;
+    width: 80%;
+    font-weight: 600;
+    margin-left: 2em;
+}
+
+form{
+    background-color: white;
+    box-shadow: 0 10px 20px -2px ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+
+.inputWrapper{
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    width: 48%;
+    font-size: medium;
+    opacity: 75%;
+    padding: 5px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    border: 2px solid blue;
+    box-shadow: 0 10px 20px -2px ;
+
+}
+
+input[type=password]:invalid {
+    /* border-color: red; */
+    border: 2px solid red;
+}
+  
+  
+input[type=password]:valid {
+    /* border-color: green; */
+    border: 2px solid green;
+}
+  
+
+button{
+    background-color: #596D48;
+    border: 2px solid #555;
+    border-radius: 2px;
+    width: 40%;
+    height: 25px;
+    margin: 10px 200px 20px;
+    font-family: sans-serif;
+    font-size: medium;
+    /* padding: 10px; */
+    
+}
+
+button:hover {
+    background-color: #45a049;
+  }
