@@ -1,4 +1,4 @@
-* {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -16,19 +16,19 @@
     background-color: #cbd5e1;
   }
 
-    .small-icon{
+  .small-icon{
     width: 1em;
     height: 1em;
     filter: brightness(0) invert(1);
 }
 
-.medium-icon{
+  .medium-icon{
     width: 2.75em;
     height: 2.75em;
     filter: brightness(0) invert(1);
 }
 
-    #query{
+  #query{
     width: 30em;
     height: 3em;
     border-radius: 1.625rem;
@@ -38,14 +38,14 @@
 
 }
   
-    .container {
+  .container {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
     gap: 4px;
   }
   
-  
+  /* .container is the main div that contains the page */
   .container div {
     padding: 15px;
     font-size: 32px;
@@ -54,6 +54,7 @@
     color: white;
   }
   
+  /* contains menu and nav */
   .header {
     background-color: #1e293b;
     display: grid;
@@ -75,6 +76,7 @@
 
   }
   
+  /* contains title and all side-content */
   .sidebar {
     background-color: #020617;
     /* gap: 50px; */
@@ -132,6 +134,7 @@
 
   }
   
+  /* contains card, title and description divs */
   .article {
     background-color: #64748b;
     display: grid;
@@ -151,20 +154,33 @@
     height: 200px;
     background-color: #FFFFFF;
     color: black;
-    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-left: 8px solid;
+    border-color: #3b82f6;
+    border-radius: 20px;
   }
+
   
   .card p {
     color: black;
     font-weight: normal;
     font-size: 14px;
+    /* grid-row: 1 / 2;
+    grid-column: 1 / 2; */
   }
+
+  /* .card description {
+    margin-top: 20px;
+  } */
   
   .card .title {
+    /* margin-top: 20px; */
     font-size: 18px;
-    text-align: center;
+    text-align: left;
   }
   
+  /* bottom of the page div */
   .footer {
     background-color: #393f4d;
     grid-column: 1 / 3;
